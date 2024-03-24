@@ -5,10 +5,557 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HockeySpo</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5f9a4ea466.js" crossorigin="anonymous"></script>
+
 </head>
 
-<body>
+<body class="bg-white">
+    <header class="container mx-auto">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="navbar">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52 text-black">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl text-black">HockeySpo</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-black">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <h1 class="hidden lg:inline">search
 
+                    </h1>
+                    <a class="btn bg-[#FF4240] text-white border-[#FF4240]">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Slider Starts Here -->
+        <div class="lg:relative">
+            <div class="carousel w-full ">
+                <!-- Slide One -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- Slide Two -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="static lg:absolute lg:left-[500px] lg:bottom-4 my-2 lg:w-[500px] p-6 bg-black rounded-lg ">
+                <h3 class="text-xl font-bold text-blue-200">
+                    Meet all the heroes from the field
+                </h3>
+                <br>
+                <p>"Meet all the heroes from the field" is a teaser that invites the audience to discover and learn more
+                    about Hockey.</p>
+            </div>
+        </div>
+        <!-- Slider Ends Here -->
+
+    </header>
+
+
+    <main>
+
+        <!-- Professional Hockeys Club Section Starts -->
+        <section class=" container mx-auto ">
+            <div class="border-dashed border-y-2 border-gray-400 my-12 py-20">
+                <h1 class="text-center text-black text-4xl font-extrabold ">
+                    Professional Hockeys Club
+                </h1>
+                <p class="text-center text-black">The Professional Hockey Club is a dedicated organization that
+                    promotes
+                    the sport of hockey at a high
+                    level.</p>
+            </div>
+
+            <!-- Radial Procgressbar -->
+            <div
+                class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 container mx-auto my-16 border-dashed border-b-2 border-gray-400 pb-20">
+                <!-- progress one -->
+                <div class="text-center">
+                    <!-- Progress Bar -->
+                    <div class="radial-progress text-red-600" style="--value:87;" role="progressbar">87%
+                    </div>
+                    <div class="my-6">
+                        <h2 class="text-black text-xl font-bold">Prayer Facility</h2>
+                        <p class="text-black text-center">We have prayer facility <br> in out academy</p>
+                    </div>
+                </div>
+                <!-- progress Two -->
+                <div class="text-center">
+                    <!-- Progress Bar -->
+                    <div class="radial-progress text-green-600" style="--value:95;" role="progressbar">95%
+                    </div>
+                    <div class="my-6">
+                        <h2 class="text-black text-xl font-bold">Experienced Coach</h2>
+                        <p class="text-black text-center">We have experienced <br> coach</p>
+                    </div>
+                </div>
+                <!-- progress three -->
+                <div class="text-center">
+                    <!-- Progress Bar -->
+                    <div class="radial-progress text-yellow-600" style="--value:90;" role="progressbar">90%
+                    </div>
+                    <div class="my-6">
+                        <h2 class="text-black text-xl font-bold">Senior Player</h2>
+                        <p class="text-black text-center">We have senior <br> players</p>
+                    </div>
+                </div>
+                <!-- progress Four -->
+                <div class="text-center">
+                    <!-- Progress Bar -->
+                    <div class="radial-progress text-blue-600" style="--value:80;" role="progressbar">80%
+                    </div>
+                    <div class="my-6">
+                        <h2 class="text-black text-xl font-bold">Prayer Facility</h2>
+                        <p class="text-black text-center">We have prayer facility <br> in out academy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Professional Hockeys Club Section  Ends Here-->
+
+        <!-- Program Sections Starts -->
+        <section class=" container mx-auto">
+            <div class="border-dashed border-b-2 border-gray-400  pb-6">
+                <h1 class="text-center text-black text-sm lg:text-4xl font-bold lg:font-extrabold ">
+                    Program Sections
+                </h1>
+                <p class="text-center text-black">The "Program Sections" is a dedicated part of the Professional Hockey
+                    Club's website that provides detailed information about their various programs.</p>
+            </div>
+
+            <!-- Cards -->
+
+            <div class="grid gap-5 mb-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 my-6">
+
+                <!-- Card one -->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="images/2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-white lg:mt-36">Junior Program</h2>
+                        <p class="text-white">The Junior Program is one of the programs offered by the Professional
+                            Hockey Club, as part of
+                            their Program Sections.</p>
+                        <div class="">
+                            <button class="btn bg-[#FF4240] text-white border-[#FF4240]">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Two -->
+                <div class="card bg-base-100 shadow-xl image-full">
+                    <figure><img src="images/3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-white lg:mt-36">Teenager Program</h2>
+                        <p class="text-white">The Teenager Program is one of the programs
+                            offered by the
+                            Professional
+                            Hockey Club, as part
+                            of
+                            their Program Sections.
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#FF4240] text-white border-[#FF4240]">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Card Three -->
+            <div class="grid grid-cols-1 lg:grid-cols-1">
+                <div class="card col-span-2 bg-base-100 shadow-xl image-full">
+                    <figure><img src="images/4.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-white lg:mt-36">Professional Program</h2>
+                        <p class="text-white">The Professional Program is one of the programs <br> offered by the
+                            Professional
+                            Hockey Club, <br> as part
+                            of
+                            their Program Sections.</p>
+                        <div class="card-actions">
+                            <button class="btn bg-[#FF4240] text-white border-[#FF4240]">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Program Sections Ends -->
+
+        <!-- New Products Section Starts Here -->
+        <section class="my-16 container mx-auto">
+            <div class="border-dashed border-y-2 border-gray-400  py-8">
+                <h1 class="text-center text-black text-sm lg:text-4xl font-bold lg:font-extrabold ">
+                    New Products
+                </h1>
+                <p class="text-center text-black">
+                    The "New Products" section is a part of the Professional Hockey Club's website that showcases the
+                    latest products related to hockey.
+                </p>
+            </div>
+
+            <!-- Products -->
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+                <!-- Card One Starts Here -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/5.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <i class="fa-solid fa-star text-amber-400"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20 </i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                            <h4 class="py-2 text-black">World Cup Flags Jacket</h4>
+                            <p class=" text-black">This is our world cup flags jacket for tis season</p>
+
+                            <div class="flex justify-between items-center my-4">
+                                <h2 class="text-red-600 font-bold"> Price - $22.00</h2>
+
+                                <i class="fa-solid fa-cart-plus text-sm"> Delivery Fee : Free</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Two Starts Here -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/6.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <i class="fa-solid fa-star text-amber-400"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20 </i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                            <h4 class="py-2 text-black">World Cup Flags Football</h4>
+                            <p class=" text-black">This is our world cup flags football for tis season</p>
+
+                            <div class="flex justify-between items-center my-4">
+                                <h2 class="text-red-600 font-bold"> Price - $22.00</h2>
+
+                                <i class="fa-solid fa-cart-plus text-sm"> Delivery Fee : Free</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Three Starts Here -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/7.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <i class="fa-solid fa-star text-amber-400"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20 </i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                            <h4 class="py-2 text-black">Cap For Hockeys</h4>
+                            <p class=" text-black">This is our world cup flags Cap for tis season</p>
+
+                            <div class="flex justify-between items-center my-4">
+                                <h2 class="text-red-600 font-bold"> Price - $22.00</h2>
+
+                                <i class="fa-solid fa-cart-plus text-sm"> Delivery Fee : Free</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Four Starts Here -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/8.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <i class="fa-solid fa-star text-amber-400"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20 </i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                            <h4 class="py-2 text-black">World Cup Flags Jersey</h4>
+                            <p class=" text-black">This is our world cup flags jersey for tis season</p>
+
+                            <div class="flex justify-between items-center my-4">
+                                <h2 class="text-red-600 font-bold"> Price - $22.00</h2>
+
+                                <i class="fa-solid fa-cart-plus text-sm"> Delivery Fee : Free</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Five Starts Here -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/9.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <i class="fa-solid fa-star text-amber-400"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20 </i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                            <h4 class="py-2 text-black">World Cup Flags Halmet</h4>
+                            <p class=" text-black">This is our world cup flags Halmet for tis season</p>
+
+                            <div class="flex justify-between items-center my-4">
+                                <h2 class="text-red-600 font-bold"> Price - $22.00</h2>
+
+                                <i class="fa-solid fa-cart-plus text-sm"> Delivery Fee : Free</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Six Starts Here -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/10.png" class="max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <i class="fa-solid fa-star text-amber-400"> 5.0 </i>
+                            <i class="fa-regular fa-eye"> 20 </i>
+                            <i class="fa-regular fa-heart"> 200</i>
+                            <h4 class="py-2 text-black">World Cup Flags Football</h4>
+                            <p class=" text-black">This is our world cup flags Football for tis season</p>
+
+                            <div class="flex justify-between items-center my-4">
+                                <h2 class="text-red-600 font-bold"> Price - $22.00</h2>
+
+                                <i class="fa-solid fa-cart-plus text-sm"> Delivery Fee : Free</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- New Products Section Ends Here -->
+
+        <!-- Clients Question Section  Starts Here-->
+        <section class="my-8 container mx-auto">
+
+            <div class="border-dashed border-y-2 border-gray-400  py-8">
+                <h1 class="text-center text-black text-sm lg:text-4xl font-bold lg:font-extrabold ">
+                    Clients Question
+                </h1>
+                <p class="text-center text-black">
+                    Here are some Frequently asked questions by our clients about the products and services.
+                </p>
+            </div>
+            <!-- Accordion for FAQ -->
+            <div>
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row">
+                        <img src="images/11.png" class=" w-1/2  lg:max-w-sm rounded-lg shadow-2xl" />
+                        <div>
+                            <div class="collapse collapse-plus ">
+                                <input type="radio" name="my-accordion-3" checked="checked" />
+                                <div class="collapse-title text-xl font-medium text-black">
+                                    What is HockeySpo?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>HockeySpo is a website that provides information about the sport of hockey and
+                                        the Professional Hockey Club.</p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus ">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium text-black">
+                                    What programs does the Professional Hockey Club offer?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>The Professional Hockey Club offers various programs, including the Junior
+                                        Program, Teenager Program, and Professional Program. </p>
+                                </div>
+                            </div>
+                            <div class="collapse collapse-plus ">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium text-black">
+                                    What products does HockeySpo offer?
+                                </div>
+                                <div class="collapse-content">
+                                    <p>HockeySpo offers a variety of hockey-related products, including jackets,
+                                        footballs, caps, jerseys, helmets, and more. </p>
+                                </div>
+                            </div>
+
+                            <div class="collapse collapse-plus ">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-medium text-black">
+                                    How can I get involved with HockeySpo??
+                                </div>
+                                <div class="collapse-content">
+                                    <p>You can get involved with HockeySpo by participating in one of the programs
+                                        offered by the Professional Hockey Club, purchasing hockey products from the
+                                        website, or by contacting the organization to learn about volunteer and
+                                        sponsorship opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Clients Question Section  Ends Here-->
+
+        <!-- Get In Touch Section Starts Here -->
+        <Section class="container mx-auto">
+            <div class="border-dashed border-y-2 border-gray-400  py-8">
+                <h1 class="text-center text-black text-sm lg:text-4xl font-bold lg:font-extrabold ">
+                    Get In Touch
+                </h1>
+                <p class="text-center text-black">
+                    Get in touch with us to know more about HockeySpo.
+                </p>
+            </div>
+
+            <!-- Getint touch Form -->
+
+            <div class="flex flex-col lg:flex-row my-20">
+                <Div>
+
+                    <div class="max-w-96 p-14 border-gray border-2 rounded-md ">
+
+                        <div class="bg-[#fddd5f78] rounded-md p-4 mb-2">
+                            <img src="Images/Group 1171275317.png" alt="" srcset="">
+
+                            <p>Phone Number : </p>
+                            <h4 class="text-black">(+62) 123-321-543</h4>
+
+                        </div>
+
+                        <div class="bg-[#fddd5f78] rounded-md p-4 mb-2">
+                            <img src="Images/Group 1171275318.png" alt="" srcset="">
+
+                            <p>Email :</p>
+                            <h4 class="text-black">hockeys@support.com</h4>
+
+                        </div>
+                        <div class="bg-[#fddd5f78] rounded-md p-4 mb-2">
+                            <img src="Images/Group 1171275321.png" alt="" srcset="">
+
+                            <p>Location : </p>
+                            <h4 class="text-black">152/1 Mohakhali Wireless Gate</h4>
+
+                        </div>
+
+                    </div>
+                </Div>
+                <!-- input box -->
+                <Div class="grid gird-cols-1 lg:grid-cols-2 py-14 gap-4 mx-auto">
+                    <div class="m-0 p-0">
+                        <h2 class="text-black font-bold  text-lg">Your Name</h2><label
+                            class="input input-bordered flex items-center gap-2 bg-gray-50">
+                            <input type="text" class="grow" placeholder="Enter Your Full Name" />
+                        </label>
+
+                        <h2 class="text-black font-bold text-lg">Your Email</h2><label
+                            class="input input-bordered flex items-center gap-2 bg-gray-50">
+                            <input type="email" class="grow" placeholder="Enter Your Email" />
+                        </label>
+
+                    </div>
+
+                    <div class="m-0 p-0">
+                        <h2 class="text-black font-bold text-lg">Subject</h2><label
+                            class="input input-bordered flex items-center gap-2 bg-gray-50">
+                            <input type="text" class="grow" placeholder="Enter Your Subject" />
+                        </label>
+
+                        <h2 class="text-black font-bold text-lg">Your Mobile</h2><label
+                            class="input input-bordered flex items-center gap-2 bg-gray-50">
+                            <input type="number" class="grow" placeholder="Enter Your Mobile Number" />
+                        </label>
+
+                    </div>
+
+                    <div class=" bg-gray-50 row-span-4 col-span-1 lg:col-span-2">
+
+                        <h2 class="text-black font-bold text-lg">Message</h2>
+                        <input type="text" placeholder="Type your message here"
+                            class="input row-span-4 col-span-2 bg-gray-50 w-full" />
+                    </div>
+
+                    <h2 class=" col-span-1 lg:col-span-2  btn bg-[#FF4240] text-white border-0">Send Message</h2>
+
+                </Div>
+            </div>
+
+            <!-- social Media -->
+            <div class="social container mx-auto text-center bg-gray-100 rounded-lg p-6">
+                <h2 class="text-black text-lg font-bold">Social Media</h2>
+                <div class="space-x-4 flex justify-center mt-4">
+                    <img src="Images/Facebook.png" alt="">
+                    <img src="Images/Instagram.png" alt="">
+                    <img src="Images/Linkedin.png" alt="">
+                    <img src="Images/Twitter.png" alt="">
+                </div>
+            </div>
+
+
+        </Section>
+        <!-- Get In Touch Section Ends Here -->
+
+
+
+    </main>
+
+    <footer class="footer p-10 bg-base-200 text-base-content mt-6">
+        <aside>
+            <h1 class="text-white text-lg font-bold">Get In Touch</h1>
+            <p>If you're looking for the best hockey academy <br>or anything related to it near you then it's the best
+                place.</p>
+
+            <p><i class="fa-solid fa-envelope text-red-600"></i> hockyspo@support.com</p>
+            <p><i class="fa-solid fa-phone text-red-600"></i> (+62) 123-321-543</p>
+        </aside>
+
+        <nav>
+            <h6 class="footer-title text-white">Company</h6>
+            <a class="link link-hover">About us</a>
+            <a class="link link-hover">Contact</a>
+            <a class="link link-hover">Jobs</a>
+            <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="footer-title text-white">Services</h6>
+            <a class="link link-hover">Branding</a>
+            <a class="link link-hover">Design</a>
+            <a class="link link-hover">Marketing</a>
+            <a class="link link-hover">Advertisement</a>
+        </nav>
+
+        <nav>
+            <h6 class="footer-title text-white">Legal</h6>
+            <a class="link link-hover">Terms of use</a>
+            <a class="link link-hover">Privacy policy</a>
+            <a class="link link-hover">Cookie policy</a>
+        </nav>
+    </footer>
 </body>
 
 </html>
